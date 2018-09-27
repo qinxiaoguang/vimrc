@@ -111,28 +111,21 @@ let g:airline_powerline_fonts=1
 if !exists('g:airline_symbols')
     let g:airline_symbols={}
 endif
-let g:airline_left_sep='>'
-let g:airline_right_sep='<'
-let g:airline_detect_modified=1
-let g:airline_detect_crypt=1
-let g:airline_detect_spell=1
-let g:airline_detect_spelllang=1
-let g:airline_detect_iminsert=0
-let g:airline_inactive_collapse=1
+let g:airline_left_sep='>>>'
+let g:airline_right_sep='<<<'
 " 关闭空白符检测
-let g:airline#extensions#whitespace#enabled=0
-"==== airline end
+"let g:airline#extensions#whitespace#enabled=0
+""==== airline end
 " tab for 4 space
 set ts=4
 set expandtab
 set hls
-" =====
-" easy-motion
-" =====
+" ===== easy-motion =====
 map <Leader><Leader>j <Plug>(easymotion-j)
 map <Leader><Leader>k <Plug>(easymotion-k)
 map <Leader><leader>h <Plug>(easymotion-linebackward)
 map <Leader><leader>l <Plug>(easymotion-lineforward)
+" ===== easy-motion =====
 " ycm
 "let g:ycm_key_list_select_completion=['<c-n>']
 "let g:ycm_key_list_previous_completion=['<c-p>']
@@ -157,6 +150,8 @@ nmap <Leader>v :vsplit<CR>
 nmap <Leader>q :q<CR>
 nmap <Leader>x :x<CR>
 nmap <Leader>w :w<CR>
+nmap <Leader><tab> :tabNext<CR>
+nmap <Leader>cw :tabc<CR>
 " ========= my nmap =============
 
 " 设置对齐线格式
