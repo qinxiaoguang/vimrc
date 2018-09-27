@@ -152,9 +152,12 @@ nmap <Leader>x :x<CR>
 nmap <Leader>w :w<CR>
 nmap <Leader><tab> :tabNext<CR>
 nmap <Leader>cw :tabc<CR>
+nmap <Leader>1 1gt<CR>
+nmap <Leader>2 2gt<CR>
+nmap <Leader>3 3gt<CR>
+nmap <Leader>4 4gt<CR>
+nmap <Leader>5 5gt<CR>
 " ========= my nmap =============
 
 " 设置对齐线格式
 let g:indentLine_char = '¦'
-filetype on
-
