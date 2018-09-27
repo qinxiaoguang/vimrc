@@ -145,6 +145,9 @@ nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 nmap <Leader>t :terminal<CR>
 nmap <Leader>s :split<CR>
 nmap <Leader>v :vsplit<CR>
+nmap <Leader>q :q<CR>
+nmap <Leader>x :x<CR>
+nmap <Leader>w :w<CR>
 " ========= my nmap =============
 
 " 设置对齐线格式
