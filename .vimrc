@@ -1,3 +1,4 @@
+" first install vundle :mkdir -p ~/.vim/bundle && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 " vundle begin
 set number
 set encoding=utf-8
