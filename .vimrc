@@ -100,7 +100,7 @@ nmap <Leader>f :History<CR>
 nmap <Leader>b :Buffers<CR>
 nmap <Leader>p :Files<CR>
 map <C-n> :NERDTreeToggle<CR>
-
+nmap <CR> :TagbarToggle<CR>
 " ===== easy-motion =====
 map <Leader><Leader>j <Plug>(easymotion-j)
 map <Leader><Leader>k <Plug>(easymotion-k)
