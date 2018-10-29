@@ -122,19 +122,21 @@ nmap <Leader>3 3gt<CR>
 nmap <Leader>4 4gt<CR>
 nmap <Leader>5 5gt<CR>
 " ========= map end =============
-
 " ========= set ==============
 set cursorline " 设置横竖线
 set cursorcolumn
 set laststatus=2
 set showmatch " 显示代码匹配
 set background=dark
-set t_Co=256
-set ts=4  " tab for 4 space
+" set t_Co=256
+set ts=4  " set tabstop=4 设置tab键为4个空格
+set sw=4  " set shiftwidth=4 换行自动缩进设置为4个空格
 set expandtab
+set autoindent " 自动对齐格式引用到下一行，set smartindent, 智能的对齐方式
 set hls
 "let g:solarized_termcolors=256
 "colorscheme solarized
 colorscheme molokai
 filetype plugin indent on
 syntax on
+
