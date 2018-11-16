@@ -34,11 +34,22 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } 
 Plugin 'junegunn/fzf.vim'
 " 显示对齐线
-Plugin 'Yggdroot/indentLine'
+"Plugin 'Yggdroot/indentLine'
 " markdown
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'Valloric/YouCompleteMe'
+"" if you dont want ycm ,you can use deoplete -- start
+"if has('nvim')
+  "Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"else
+  "Plugin 'Shougo/deoplete.nvim'
+  "Plugin 'roxma/nvim-yarp'
+  "Plugin 'roxma/vim-hug-neovim-rpc'
+"endif
+"let g:deoplete#enable_at_startup = 1
+"" -- end
+
 call vundle#end()
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
