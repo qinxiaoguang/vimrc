@@ -39,6 +39,10 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'Valloric/YouCompleteMe'
+" python 插件
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'nvie/vim-flake8'
 "" if you dont want ycm ,you can use deoplete -- start
 "if has('nvim')
   "Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -79,6 +83,9 @@ let g:tagbar_type_go = {
     \ 'ctagsargs' : '-sort -silent'
 \ }
 
+let g:SimpylFold_docstring_preview=1
+let python_highlight_all=1
+
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
@@ -112,13 +119,19 @@ nmap <Leader>b :Buffers<CR>
 nmap <Leader>p :Files<CR>
 map <C-n> :NERDTreeToggle<CR>
 nmap <CR> :TagbarToggle<CR>
+" 设置窗口移动规则
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+" 设置空格为代码折叠
+nnoremap <space> za
 " ===== easy-motion =====
 map <Leader><Leader>j <Plug>(easymotion-j)
 map <Leader><Leader>k <Plug>(easymotion-k)
 map <Leader><leader>h <Plug>(easymotion-linebackward)
 map <Leader><leader>l <Plug>(easymotion-lineforward)
 " ===== easy-motion =====
-
 nmap <Leader>t :terminal<CR>
 nmap <Leader>s :split<CR>
 nmap <Leader>v :vsplit<CR>
@@ -134,6 +147,10 @@ nmap <Leader>4 4gt<CR>
 nmap <Leader>5 5gt<CR>
 " ========= map end =============
 " ========= set ==============
+" 允许代码折叠
+set foldmethod=indent
+set foldlevel=99
+set splitright
 set cursorline " 设置横竖线
 set cursorcolumn
 set laststatus=2
