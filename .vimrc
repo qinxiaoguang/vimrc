@@ -124,6 +124,8 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+" 设置关闭其他窗口的快捷键
+nnoremap <Leader>o <C-W><C-O> 
 " 设置空格为代码折叠
 nnoremap <space> za
 " ===== easy-motion =====
@@ -147,8 +149,8 @@ nmap <Leader>4 4gt<CR>
 nmap <Leader>5 5gt<CR>
 " ========= map end =============
 " ========= set ==============
-" 允许代码折叠
-set foldmethod=indent
+set  mouse=a  " 允许鼠标移动窗口
+set foldmethod=indent " 允许代码折叠
 set foldlevel=99
 set splitright
 set cursorline " 设置横竖线
