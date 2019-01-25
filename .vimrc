@@ -150,7 +150,7 @@ nmap <Leader>4 4gt<CR>
 nmap <Leader>5 5gt<CR>
 " ========= map end =============
 " ========= set ==============
-set  mouse=a  " 允许鼠标移动窗口
+"set  mouse=a  " 允许鼠标移动窗口 , 不允许，否则无法复制
 set foldmethod=indent " 允许代码折叠
 set foldlevel=99
 set splitright
