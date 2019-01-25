@@ -1,6 +1,7 @@
 " first install vundle :mkdir -p ~/.vim/bundle && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 set number
 set encoding=utf-8
+set fileencodings=utf-8,gbk
 set rtp+=~/.vim/bundle/Vundle.vim
 set nocompatible               " be iMproved
 filetype off                   " required!
